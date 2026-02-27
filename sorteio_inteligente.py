@@ -1,4 +1,6 @@
 import random as r
+import math as m
+from datetime import datetime as d
 
 numeros = []
 
@@ -53,7 +55,13 @@ def sortear(quantidade):
     for i in range(quantidade):
         numero = r.randint(1, 100)
         numeros.append(numero)
+    agora = d.now
     print(sorted(numeros))
+    menor = min(numeros)
+    maior = max(numeros)
+    media = len(numeros)
+    raiz = m.sqrt(numeros)
+    print()
 
 header()
 escolher()
